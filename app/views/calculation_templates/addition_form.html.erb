@@ -8,4 +8,12 @@
   <input type="text" id="second_field" name="second_num">
 
   <button>Add!</button>
+
+  <p>
+  Your previous addition was: <%= cookies.fetch(:addition_first_num) %>
+  +
+  <%= cookies.fetch(:addition_second_num) %>
+  =
+  <%= cookies.fetch(:addition_result) %>
+  </p>
 </form>
